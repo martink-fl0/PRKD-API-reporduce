@@ -7,9 +7,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    print("Logging message to the console.")
+    print("Logging message to the console.", flush=True)
     current_time = time.strftime("%H:%M:%S")
-    print(f"[{current_time}] is the time now.")
+    print(f"[{current_time}] is the time now.", flush=True)
     return jsonify({"message": "Hello, World!"}), 200
 
 if __name__ == '__main__':

@@ -3,6 +3,8 @@ import time
 
 app = Flask(__name__)
 
+#some comment
+
 @app.route('/')
 def hello_world():
     print("Logging message to the console.")
